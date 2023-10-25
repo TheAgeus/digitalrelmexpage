@@ -1,25 +1,43 @@
 @media (width < 1200px) {
-    .hero_text_container > h2 {
-        font-size: 4rem;
+    .text_container > h2 {
+        font-size: 8rem;
     }
 }
 
 @media (width < 800px) {
-    .hero_text_container > h2 {
-        font-size: 3rem;
+    .text_container > h2 {
+        font-size: 6rem;
     }
 }
 
 @media (width < 700px) {
-    .hero_text_container > h2 {
-        font-size: 3rem;
+    .text_container > h2 {
+        font-size: 4rem;
     }
 }
 
 @media (width < 500px) {
-    .hero_text_container > h2 {
+    .text_container > h2 {
+        font-size: 3rem;
+    }
+
+    .static_text{
+        height: 50%;
+        position: relative;
+    }
+    .dinamic_text{
+        height: 50%;
+    }
+    .hero_typing_text{
         font-size: 2rem;
-        text-align: center;
+    }
+
+    .particle_1{
+
+        top: 10%;
+      
+        width: 150px;
+        height: 150px;
     }
 }
 

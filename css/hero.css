@@ -1,22 +1,32 @@
-.overlay{
+
+.overlay {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    
 }
-.hero_container {
-    width: 100%;
-    height: 80vh;
+
+.particle_1{
     position: absolute;
     
-    background-image: url("/img/hero.jpg");
-    background-size: cover;
-    top: 5rem;
-    
+    top: 0%;
+    left: -10%;
+    width: 300px;
+    height: 400px;
+    -webkit-filter: blur(80px);
+    filter: blur(80px);
+    background: radial-gradient(circle at 50% 50%, #0008ff, #444bf700);
+    opacity: 0.2;
+}
 
-    display: flex;
+
+.hero_container {
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    /*background-image: url("/img/hero.jpg");*/
+    background: rgb(18,79,142);
+    background: linear-gradient(360deg, rgb(125, 162, 230), 28%, rgb(1, 69, 132) 100%);
     flex-direction: column;
     justify-content: center;
 }
@@ -25,16 +35,31 @@
     object-fit: cover;
 }
 
-.hero_text_container {
-    padding-inline: 5%;
-    font-weight: bolder;
-    z-index: 1;
+.text_container{
+    position: absolute;
+    bottom: 0;
 }
 
-.hero_text_container > h2 {
+.text_container >h2{
     color: var(--nav-text-color);
-    font-size: 6rem;
-    font-weight: bolder;
-    width: fit-content;
-    padding-inline: 1rem;
+    font-size: 10rem;
+    margin: 0;
+}
+
+.hero_text_container{
+    height: 100%;
+    padding-inline-start: 5%;
+}
+
+.static_text{
+    height: 80%;
+    position: relative;
+}
+.dinamic_text{
+    height: 20%;
+}
+
+.hero_typing_text{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
 }

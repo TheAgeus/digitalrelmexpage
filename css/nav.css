@@ -1,6 +1,6 @@
 :root{
     --nav-bg-color: rgba(0, 58, 113,.9);
-    --nav-text-color: #ffffff;
+    --nav-text-color: #f6f6f6;
     --nav-link-hover-color: #2d3af9;
 }
 
@@ -11,6 +11,7 @@
 
 .nav_container { /*Este es el del display flex*/
     position: fixed;
+    top:0;
     display: flex;
     flex-wrap: wrap;
     padding-block: 0.5rem;
@@ -20,6 +21,7 @@
     justify-content: space-between;
     font-size: 1rem;
     width: 100%;
+    z-index: 2;
 }
 
 .nav_list {
