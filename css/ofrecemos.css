@@ -1,0 +1,92 @@
+.ofrecemos_section {
+    margin-block: 10rem;
+    padding-inline: 5%;
+}
+
+.ofrecemos {
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.title_ofrecemos {
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: 100;
+    
+}
+
+.ofrecemos > .rubro {
+    border: 0.1px solid rgb(230, 238, 255);
+    min-width: 300px;
+    min-height: 200px;
+    position: relative;
+    flex: 1 0 21%;
+}
+.ofrecemos > .rubro:hover {
+    cursor: pointer;
+    background-color: rgb(243, 243, 255);
+}
+
+
+.ofrecemos > .rubro > .icono {
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+}
+
+.ofrecemos > .rubro:hover .item  {
+    animation-name: fadeout_down;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.ofrecemos > .rubro:hover .item-hidden  {
+    animation-name: fadein_down;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.ofrecemos > .rubro > .item {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: end;
+    padding: 1rem;
+}
+
+.ofrecemos > .rubro > .item-hidden {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: end;
+    padding: 1rem;
+    opacity: 0;
+}
+
+
+/* ANIMATIONS */
+@keyframes fadeout_down {
+    from {
+        opacity: 1;
+        bottom: 0;
+    }
+    to {
+        opacity: 0;
+        bottom: -10px;
+    }
+}
+
+@keyframes fadein_down {
+    from {
+        opacity: 0;
+        bottom: 30px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+}

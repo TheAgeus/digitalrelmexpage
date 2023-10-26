@@ -26,7 +26,7 @@
     height: 100vh;
     /*background-image: url("/img/hero.jpg");*/
     background: rgb(18,79,142);
-    background: linear-gradient(360deg, rgb(125, 162, 230), 28%, rgb(1, 69, 132) 100%);
+    background: linear-gradient(360deg, rgb(255, 255, 255), 50%, rgb(0, 58, 113) 100%);
     flex-direction: column;
     justify-content: center;
 }
@@ -49,6 +49,7 @@
 .hero_text_container{
     height: 100%;
     padding-inline-start: 5%;
+    padding-bottom: 5%;
 }
 
 .static_text{
