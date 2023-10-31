@@ -6,7 +6,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
-    margin-block: 10rem;
+    margin-block-start: 10rem;
     background-image: url("/img/fondo.png");
     min-height: 600px;
     background-attachment: fixed;
