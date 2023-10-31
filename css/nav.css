@@ -1,5 +1,5 @@
 :root{
-    --nav-bg-color: rgba(0, 58, 113,.9);
+    --nav-bg-color: rgb(0, 58, 113);
     --nav-text-color: #f6f6f6;
     --nav-link-hover-color: #2d3af9;
 }
