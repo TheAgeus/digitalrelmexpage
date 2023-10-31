@@ -1,0 +1,39 @@
+.paralax
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-block: 10rem;
+    background-image: url("/img/fondo.png");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 5rem;
+}
+.paralax > .paralax_item_container
+{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+.paralax > .paralax_item_container > .text 
+{
+    text-align: center;
+
+    font-size: 1.3rem;
+}
+.paralax > .paralax_item_container > .number 
+{
+    text-align: center;
+    font-weight: bold;
+
+    font-size: 3rem;
+}
