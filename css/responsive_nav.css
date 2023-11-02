@@ -11,9 +11,17 @@
     .dropdown {
         display: block;
     }
+    .logo_container{
+        font-size: 1.20rem;
+        font-weight: bold;
+    }
+    
 }
 @media (width > 700px){
     .dropdown {
         display: none;
+    }
+    .nav_list > li > a{
+        padding-inline: 1.25rem;
     }
 }

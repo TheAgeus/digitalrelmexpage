@@ -4,6 +4,11 @@
     --nav-link-hover-color: #2d3af9;
 }
 
+.logo_container{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
 .logo_container > img{
     height: 4rem;
     padding-inline: 1rem;
@@ -14,14 +19,14 @@
     top:0;
     display: flex;
     flex-wrap: wrap;
-    padding-block: 0.5rem;
     color: var(--nav-text-color);
     background-color: var(--nav-bg-color);
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
-    width: 100%;
+    width: 90%;
     z-index: 2;
+    padding-inline: 5%;
 }
 
 .nav_list {
@@ -49,7 +54,6 @@
 .nav_list > li > a {
     color: var(--nav-text-color);
     text-decoration: none;
-    padding-inline: 1.25rem;
     padding-block: 0.75rem;
 }
 
