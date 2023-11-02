@@ -17,6 +17,7 @@
     <title>Digitalrelmex</title>
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- HERO INICIO -->
     <div class="hero_container">
@@ -40,20 +41,7 @@
     <!-- HERO FINAL -->
 
     <!-- NAV BAR INICIO -->
-    <div class="nav_container">
-        <div class="logo_container">
-            DIGITALRELMEX
-        </div>
-    
-        <div class="dropdown">
-            <span onclick="navListToggle()"> Menu </span>
-        </div>
-        <ul class="nav_list" style="display: flex;">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">¿Quiénes somos?</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </div>
+    <div class="nav-component"></div>  
     <!-- NAV BAR FINAL -->
 
 
@@ -281,64 +269,19 @@
 
     <!-- FOOTER INICIO -->
 
-    <div class="footer">
-        <div class="footer-title">
-            DIGITALRELMEX
-        </div>
-        <div class="footer-contenedor-flex">
-            <div class="contacto-container">
-                <div class="title">Contacto</div>
-                <div class="group-item">
-                    <div class="text">Av Topacio 2842, Victoria, 45060 Zapopan, Jal.</div>
-                </div>
-                <div class="group-item">
-                    <div class="text">+52 1 33 3502 1121</div>
-                </div>
-                <div class="group-item">
-                    <div class="text">admin@sistemasdigitales.com.mx</div>
-                </div>
-            </div>
+    <div class="footer-component">
 
-            <div class="contacto-container">
-                <div class="title">Redes Sociales</div>
-                <div class="group-item">
-                    <a href="#" class="text">Facebook.</a>
-                </div>
-                <div class="group-item">
-                    <a href="#" class="text">Twitter</a>
-                </div>
-                <div class="group-item">
-                    <a href="#" class="text">Google Plus</a>
-                </div>
-                <div class="group-item">
-                    <a href="#" class="text">Instagram</a>
-                </div>
-            </div>
-
-            <div class="contacto-container">
-                <div class="title">Enlace Rápido</div>
-                <div class="group-item">
-                    <div class="text">Inicio.</div>
-                </div>
-                <div class="group-item">
-                    <div class="text">¿Quiénes somos?</div>
-                </div>
-                <div class="group-item">
-                    <div class="text">Contacto.</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="copyright">
-            <span>&#169;</span>
-            Copyright 2023 Digitalrelmex
-        </div>
     </div>
 
 
     <!-- FOOTER FINAL -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $(".footer-component").load("/componentes/footer.html"); 
+            $(".nav-component").load("/componentes/nav.html"); 
+        });
+    </script>
     <script src="js/scroll.js"></script>
     <script src="js/hero/animations/typing.js"></script>
     <script src="js/nav.js"></script>
