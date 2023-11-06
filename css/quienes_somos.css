@@ -1,0 +1,66 @@
+.content {
+    margin-top: 1rem;
+}
+.content > .title {
+    background-image: url("/img/fondos/fondo2.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    padding-block: 45vh;
+}
+
+.seccion {
+    
+    padding-block: 10vh;
+    padding-inline: 10%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.seccion > * {
+}
+.seccion > .imagen {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.seccion > .imagen > img {
+    width: 80%;
+}
+.seccion > .all_text {
+    padding: 3rem;
+    width: 50%;
+}
+.seccion > .all_text > .text {
+    font-weight: 300;
+}
+.seccion > .all_text > .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-block: 0.5rem;
+}
+
+
+@media (width < 900px){
+    .content > .title {
+        font-size: 3rem;
+    }
+    .seccion {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+    .seccion > .all_text{
+        width: 80%;
+    }
+}
+
+@media (width < 500px) {
+    .content > .title {
+        font-size: 2rem;
+
+    }
+
+}
