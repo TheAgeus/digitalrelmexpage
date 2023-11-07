@@ -1,0 +1,25 @@
+.whats-icon {
+    width: 64px;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    bottom: 7rem;
+}
+
+.insta-icon {
+    width: 64px;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.whats-icon:hover, .insta-icon:hover {
+    cursor: pointer;
+}
+
+.whats-icon > img, .insta-icon > img  {
+    border-radius: 100px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 148, 253, 0.8), 0 6px 20px 0 rgba(0, 149, 255, 0.8)
+}
